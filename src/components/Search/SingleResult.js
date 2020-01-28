@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 
 function SingleResult(props) {
@@ -6,10 +7,10 @@ function SingleResult(props) {
     // 
     return (
         <>
-        {console.log(props.data)}
+        {/* {console.log(props.data)} */}
         <div>
             <h2>Image</h2>
-<Link href = "/Restshow">Restaurant Name</Link>
+                <Link href= "/Restraunt">Restaurant Name</Link>
             
             <h3>Star Count</h3>
             <h3>Street Address</h3>

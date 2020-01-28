@@ -1,14 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import FormImg from './Restaurant_Form/FormImg'
-import FormName from './Restaurant_Form/FormName'
-import Star_Review from './Review_Form/Star_Review'
-import Review_Field from './Review_Form/Review_Field'
-import FormState from './Restaurant_Form/FormState'
-import FormStreet from './Restaurant_Form/FormStreet'
-import FormZipcode from './Restaurant_Form/FormZipcode'
-import FormCity from './Restaurant_Form/FormCity'
-import FormSubmit from './Restaurant_Form/FormSubmit'
+import FormImg from './Restaurant_Form_Components/FormImg'
+import FormName from './Restaurant_Form_Components/FormName'
 
+import FormState from './Restaurant_Form_Components/FormState'
+import FormStreet from './Restaurant_Form_Components/FormStreet'
+import FormZipcode from './Restaurant_Form_Components/FormZipcode'
+import FormCity from './Restaurant_Form_Components/FormCity'
+import FormSubmit from './Restaurant_Form_Components/FormSubmit'
+import { Link } from 'react-router-dom'
 
 
 function Restaurant_form(props) {
@@ -70,9 +69,9 @@ function Restaurant_form(props) {
             <FormName
                 newName={newName}
             />
-<FormCity
-newCity={newCity}
-/>
+            <FormCity
+                newCity={newCity}
+            />
             <FormState
                 newState={newState}
             />
@@ -82,12 +81,7 @@ newCity={newCity}
             <FormZipcode
                 newZip={newZip}
             />
-            <Star_Review
-                newRating={newRating}
-            />
-            <Review_Field
-                newText={newText}
-            />
+
             <FormSubmit
                 name={name.name}
                 address={address.address}

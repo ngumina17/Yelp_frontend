@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import Link from 'next/link'
 import Star from './Single_Restaurant/Star'
-import Catagories from './Single_Restaurant/Catagories'
+import Catagories from './Single_Restaurant/Categories'
 import Reviews from './Single_Restaurant/Reviews'
+import { Link } from 'react-router-dom'
 
 function Restaurant() {
 
