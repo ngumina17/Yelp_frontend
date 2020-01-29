@@ -61,41 +61,6 @@
   margin-bottom: 10px;
 }
 
-.show-more-wrapper {
-  display: block;
-  width: 960px;
-  margin: 0 auto;
-  margin-bottom: 95px;
-}
-
-.show-more {
-  width: 300px;
-  margin: 0 auto;
-}
-
-.show-more a {
-  font-size: 14px;
-  color: #0073bb;
-  text-decoration: none;
-}
-
-.show-more a:before {
-  content: '';
-  display: inline-block;
-  width: 14px;
-  height: 9px;
-  margin-right: 10px;
-  background-image: url(https://s17.postimg.org/65f1h7i9r/arrow_dn.png);
-  background-repeat: no-repeat;
-  cursor: pointer;
-  vertical-align: center;
-  padding-bottom: 1px;
-}
-
-.show-more a:hover {
-  text-decoration: underline;
-  color: #0073bb;
-}
 
 .main-footer {
   display: block;
@@ -212,28 +177,6 @@
   color: #666;
   margin: 0 auto;
   line-height: 1.1em;
-}
-
-.field.request {
-  position: relative;
-  display: inline-block;
-  width: inherit;
-  box-sizing: border-box;
-  font-size: 18px;
-  outline: none;
-  border: 0;
-  border-radius: 4px 0 0 4px;
-}
-
-.field.location {
-  position: relative;
-  display: inline-block;
-  width: inherit;
-  box-sizing: border-box;
-  font-size: 18px;
-  outline: none;
-  border: 0;
-  border-radius: 0;
 }
 
 .search{
