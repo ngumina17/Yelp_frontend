@@ -1,68 +1,75 @@
-import React from 'react';
-import SearchBar from "./components/SearchBar"
-import "./App.css"
+import React, { useState } from 'react';
+import Header from './components/Header'
+import SearchRes from './components/SearchRes'
+import Restaurant_form from './components/Restaurant_form'
+import Review_Form from './components/Review_form'
+import Restaurant from './components/Restaurant'
+import { Link, Route, Switch } from 'react-router-dom'
+import './App.css';
 
+function App() {
 
-class App extends React.Component{
-  constructor(){
-    super()
+  const [keywords, setKeyWords] = useState({
+    keywords: ''
+  })
+  const [location, setLocation] = useState({
+    location: ''
+  })
+  const [id, setId] = useState({
+    id: ''
+  })
+  const [data, setData] = useState({
+    data: []
+  })
+
+  function newKeyWords(e) {
+    setKeyWords({ keywords: e.target.value })
   }
-
-  handleChange=(e)=>{
-    this.setState({
-      [e.target.name]: e.target.value
-    })
-    console.log(this.state)
-
-    if (this.state !== null)
-    {this.search(this.state.location)}
+  function newLocation(e) {
+    setLocation({ location: e.target.value })
   }
-
-  search=(query)=>{
-    const url = `https://opentable.herokuapp.com/api/restaurants?city=${query}`;
-    fetch(url)
-      .then(results => results.json())
-      .then(res => {console.log(res)
-          this.setState({data: res});
-      })
+  function newId(id) {
+    setId({ id: id })
   }
-
-
-render(){
+  function newData(data) {
+    setData({ data: data })
+  }
   return (
-    <>
-     <header className="main-header">
-       <div className="main-header__wrapper">
-         <div className="nav-wrapper">
-            <nav className="main-nav">
-            <ul className="main-list">
-                <li class="main-list__item"><a href="#" className="main-list__link">Write a Review</a></li>
-                <li class="main-list__item"><a href="#" className="main-list__link">Add a Restaurant</a></li>
-           </ul>
-        </nav>
-        <div className="search-container">
-          <div className="search">
-            <SearchBar onChange={this.handleChange}/>
-          </div>
-        </div>
-         </div>
-       </div>
-     </header>
-     <footer class="main-footer">
-      <small class="copyright">
-        <div class="copyright__img-block">
-          <img src="https://s3-media2.fl.yelpcdn.com/assets/srv0/yelp_styleguide/573fa19c8435/assets/img/structural/footer_cityscape.png" alt="footer img" />
-        </div>
-        <div class="copyright__text">
-          Copyright © 2004-2020 Yelp 2.0 Inc. 
-          Yelp 2.0 and related marks are not 
-          registered trademarks of Yelp.
-        </div>
-      </small>
-    </footer>
-    </>
-      
-  )
+    <div className="App">
+      <header className="App-header">
+        <Header
+          newKeyWords={newKeyWords}
+          newLocation={newLocation}
+          keywords={keywords.keywords}
+        />
+      </header>
+      <main>
+        <Switch>
+          <Route path='/search/:name'
+            render={({ props }) => (
+              <SearchRes
+                keywords={keywords.keywords}
+                location={location.location}
+                data={data.data}
+                newData={newData}
+                newId={newId}
+              />)} />
+          <Route path='/add' component={Restaurant_form} />
+          <Route path='/Review' component={Review_Form} />
+          <Route path='/Restaurant'
+            render={({ props }) => (
+              <Restaurant
+                keywords={keywords.keywords}
+data={data.data}
+newData={newData}
+                id={id.id}
+              />)} 
+/>
+        </Switch>
+      </main>
+    </div>
+  );
+
 }
 
 }
