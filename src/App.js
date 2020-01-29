@@ -72,5 +72,5 @@ newData={newData}
 
 }
 
-}
+
 export default App;

@@ -11,10 +11,10 @@ function FormName (props) {
     //      onChange = { this.handleChange }
     // }
 
-     handleChange =(e)=>{
-        let name = e.target.value
-        props.newName(name)
-    }
+    //  handleChange =(e)=>{
+    //     let name = e.target.value
+    //     props.newName(name)
+    // }
 
 
 return(
