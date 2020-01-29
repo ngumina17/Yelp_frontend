@@ -54,7 +54,7 @@ render(){
           <img src="https://s3-media2.fl.yelpcdn.com/assets/srv0/yelp_styleguide/573fa19c8435/assets/img/structural/footer_cityscape.png" alt="footer img" />
         </div>
         <div class="copyright__text">
-          Copyright © 2004-2020 Yelp 2.0 Inc. 
+          Copyright © 2020 Yelp 2.0 Inc. 
           Yelp 2.0 and related marks are not 
           registered trademarks of Yelp.
         </div>
