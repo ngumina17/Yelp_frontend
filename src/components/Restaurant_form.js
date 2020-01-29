@@ -1,14 +1,12 @@
 import React, { useState, useEffect } from "react";
 import FormImg from "./Restaurant_Form_Components/FormImg";
 import FormName from "./Restaurant_Form_Components/FormName";
-import Star_Review from "./Review_Form_Components/Star_Review";
-import Review_Field from "./Review_Form_Components/Review_Field";
 import FormState from "./Restaurant_Form_Components/FormState";
 import FormStreet from "./Restaurant_Form_Components/FormStreet";
 import FormZipcode from "./Restaurant_Form_Components/FormZipcode";
 import FormCity from "./Restaurant_Form_Components/FormCity";
 import FormSubmit from "./Restaurant_Form_Components/FormSubmit";
-import PostRestaurant from "./Restaurant_Form_Components/PostRestaurant";
+import { Link } from "react-router-dom";
 
 function Restaurant_form(props) {
   const [name, setName] = useState({
@@ -32,12 +30,12 @@ function Restaurant_form(props) {
   const [text, setText] = useState({
     text: ""
   });
-  const [image, setImage] = useState({
-    image: ""
+  const [images, setImage] = useState({
+    images: ""
   });
 
-  function newImage(image) {
-    setImage({ image: image });
+  function newImage(images) {
+    setImage({ images: images });
   }
   function newRating(rating) {
     setRating({ rating: rating });
@@ -65,23 +63,25 @@ function Restaurant_form(props) {
     <form>
       <FormImg newImage={newImage} />
       <FormName newName={newName} />
+
       <FormCity newCity={newCity} />
+
+      <FormCity newCity={newCity} />
+
       <FormState newState={newState} />
       <FormStreet newAddress={newAddress} />
       <FormZipcode newZip={newZip} />
-      <Star_Review newRating={newRating} />
-      <Review_Field newText={newText} />
+
       <FormSubmit
         name={name.name}
         address={address.address}
         city={city.city}
-        image={image.image}
+        images={images.images}
         state={state.state}
         zip={zip.zip}
         text={text.text}
         rating={rating.rating}
       />
-
     </form>
   );
 }

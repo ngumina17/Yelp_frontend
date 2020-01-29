@@ -4,8 +4,8 @@ function FormImg(props) {
   let newImage = props.newImage;
 
   function handleChange(e) {
-    let image = e.target.value;
-    props.newImage(image);
+    let images = e.target.value;
+    props.newImage(images);
   }
 
   return (

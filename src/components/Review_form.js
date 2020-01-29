@@ -1,32 +1,37 @@
-import React, { useState, useEffect } from "react";
-import Star_Review from "./Review_Form/Star_Review";
-import Review_Field from "./Review_Form/Review_Field";
-import Link from "next/link";
+import React, { useState, useEffect } from 'react';
 
-function Review_Form() {
-  const [rating, setRating] = useState({
-    rating: 0
-  });
-  const [text, setText] = useState({
-    text: ""
-  });
+import Star_Review from './Review_Form/Star_Reviews'
+import Review_Field from './Review_Form/Review_Field'
 
-  function newRating(rating) {
-    setRating({ rating: rating });
-  }
-  function newText(text) {
-    setText({ text: text });
-  }
-  console.log(rating);
-  return (
+
+function Review_Form () {
+
+    const [rating, setRating] = useState({
+        rating: 0
+    })
+    const [text, setText] = useState({
+        text: ''
+    })
+
+    function newRating (rating) {
+        setRating({ rating: rating })
+    }
+    function newText (text) {
+        setText({ text: text })
+    }
+console.log(rating)
+return(
     <nav>
-      <Star_Review newRating={newRating} />
-      <Review_Field newText={newText} />
-      <Link href="/">
-        <button type="submit">Submit</button>
-      </Link>
-    </nav>
-  );
-}
+        <Star_Review  
+            newRating={newRating}
+/>
+        <Review_Field 
+            newText={newText}
+/>
 
-export default Review_Form;
+        <button type="submit">Submit</button>
+
+    </nav>
+)}
+
+export default Review_Form
