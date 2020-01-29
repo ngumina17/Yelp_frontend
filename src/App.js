@@ -37,8 +37,7 @@ render(){
             <nav className="main-nav">
             <ul className="main-list">
                 <li class="main-list__item"><a href="#" className="main-list__link">Write a Review</a></li>
-                <li class="main-list__item"><a href="#" className="main-list__link">Events</a></li>
-                <li class="main-list__item"><a href="#" className="main-list__link">Talk</a></li>
+                <li class="main-list__item"><a href="#" className="main-list__link">Add a Restaurant</a></li>
            </ul>
         </nav>
         <div className="search-container">
@@ -55,8 +54,8 @@ render(){
           <img src="https://s3-media2.fl.yelpcdn.com/assets/srv0/yelp_styleguide/573fa19c8435/assets/img/structural/footer_cityscape.png" alt="footer img" />
         </div>
         <div class="copyright__text">
-          Copyright © 2004-2017 Yelp Inc. 
-          Yelp and related marks are 
+          Copyright © 2004-2020 Yelp 2.0 Inc. 
+          Yelp 2.0 and related marks are not 
           registered trademarks of Yelp.
         </div>
       </small>

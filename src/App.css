@@ -334,6 +334,8 @@
 .search{
   display:flex;
   justify-content: center;
+  position: absolute;
+  top: 80%;
 }
 
 .search-button {
@@ -349,4 +351,5 @@
   font-size: 0;
   vertical-align: top;
   border-radius: 0 4px 4px 0;
+  
 }
