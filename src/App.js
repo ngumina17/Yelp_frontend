@@ -1,16 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import Review_Field from '../src/components/Review_Form/Review_Field'
+import SearchBar from "./components/SearchBar"
+import "./App.css"
+import { Route, Link, Switch } from "react-router-dom";
+import Restaurant_form from "./components/Restaurant_form"
+import Review_form from "./components/Review_form"
+import Home from "./components/Home"
 
-
-function App() {
+function App (){
   return (
-    <div className="App">
-      <Review_Field />
-
-    </div>
+    <>
+    <Switch>
+     <Route exact path='/' component={Home} /> 
+      <Route exact path='/RestForm' component={Restaurant_form} />
+      <Route exact path='/review' component={Review_form} />   
+    </Switch> 
+</>
   );
-}
 
+    
+  
+}
 export default App;
