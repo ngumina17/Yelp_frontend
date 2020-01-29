@@ -1,7 +1,12 @@
+<<<<<<< HEAD
 import React, { useState } from 'react';
+=======
+import React, { useState, useEffect } from 'react';
+
+>>>>>>> 9c5b5de35e3a9b6186301cc3dea4879c1e083ea0
 import Star_Review from './Review_Form/Star_Reviews'
 import Review_Field from './Review_Form/Review_Field'
-import Link from 'next/link'
+
 
 function Review_Form () {
 
@@ -27,7 +32,9 @@ return(
         <Review_Field 
             newText={newText}
 />
-        <Link href="/"><button type="submit">Submit</button></Link>
+
+        <button type="submit">Submit</button>
+
     </nav>
 )}
 
