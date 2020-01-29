@@ -9,7 +9,6 @@
   box-sizing: border-box;
 }
 
-/********* main-header *****/
 
 .main-header {
   height: 550px;
@@ -193,58 +192,6 @@
   margin: 0;
   padding: 0;
 }
-
-.region-title {
-  font-size: 16px;
-  color: #d32323;
-  margin-bottom: 18px;
-}
-
-.languages-list {
-  display: block;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  line-height: 1.1;
-  margin-bottom: 30px;
-}
-
-.languages-list__item {
-  margin: 0;
-  padding: 0;
-  font-size: 14px;
-  color: #0073bb;
-  user-select: none;
-}
-
-.languages-sublist {
-  position: absolute;
-  display: block;
-  font-size: 14px;
-  line-height: 1.1em;
-  margin: 0;
-  padding: 0;
-}
-
-.languages-sublist__item {
-  display: none;
-  width: 204px;
-  box-sizing: border-box;
-  background-color: #fff;
-  padding: 14px;
-  cursor: pointer;
- }
-
-.languages-list__item.title:hover 
-.languages-sublist .languages-sublist__item {
-  display: block;
-}
-
-.languages-sublist__item:hover {
-  background-color: #0073bb;
-  color: #fff;
-}
-
 
 
 .copyright {
