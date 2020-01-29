@@ -47,9 +47,8 @@ else(
 return(
     <div>
         <Results
-data={props.data}
-            newId={props.newId}
-/>
+            data={props.data}
+            newId={props.newId}/>
 
     </div>
 )}
