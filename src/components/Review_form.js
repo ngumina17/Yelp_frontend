@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import Star_Review from './Review_Form/Star_Review'
+import React, { useState } from 'react';
+import Star_Review from './Review_Form/Star_Reviews'
 import Review_Field from './Review_Form/Review_Field'
 import Link from 'next/link'
 

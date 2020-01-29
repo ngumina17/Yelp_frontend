@@ -1,6 +1,9 @@
 import React from 'react';
 import SearchBar from "./components/SearchBar"
 import "./App.css"
+import { Route, Link, Switch } from "react-router-dom";
+import Restaurant_form from "./components/Restaurant_form"
+import Review_form from "./components/Review_form"
 
 
 class App extends React.Component{
@@ -36,8 +39,8 @@ render(){
          <div className="nav-wrapper">
             <nav className="main-nav">
             <ul className="main-list">
-                <li class="main-list__item"><a href="#" className="main-list__link">Write a Review</a></li>
-                <li class="main-list__item"><a href="#" className="main-list__link">Add a Restaurant</a></li>
+                <li class="main-list__item"><a><Link to="/write" className="main-list__link">Write a Review</Link></a></li>
+                <li class="main-list__item"><a><Link to="/create" className="main-list__link">Add a Restaurant</Link></a></li>
            </ul>
         </nav>
         <div className="search-container">
@@ -50,7 +53,7 @@ render(){
      </header>
      <footer class="main-footer">
       <small class="copyright">
-        <div class="copyright__img-block">
+        <div class="copyright__img">
           <img src="https://s3-media2.fl.yelpcdn.com/assets/srv0/yelp_styleguide/573fa19c8435/assets/img/structural/footer_cityscape.png" alt="footer img" />
         </div>
         <div class="copyright__text">
