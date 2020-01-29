@@ -32,7 +32,7 @@ else(
     searchParam = props.location
 )
 
-    fetch(`https://project3-restaurant-finder.herokuapp.com/restaurants/${props.keywords}/`)
+    fetch(`https://project3-restaurant-finder.herokuapp.com/restaurants/${searchParam}/`)
         .then(response => response.json())
         .then(data => {
             props.newData(data)

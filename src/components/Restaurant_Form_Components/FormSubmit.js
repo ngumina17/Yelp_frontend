@@ -14,7 +14,7 @@ function FormSubmit (props) {
 
 
 function handleClick() {
-console.log(props)
+console.log(props.city)
 }
 
 return(
