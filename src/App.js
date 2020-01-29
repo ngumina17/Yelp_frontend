@@ -9,13 +9,15 @@ import Home from "./components/Home"
 function App (){
   return (
     <>
-            <Switch>
-             <Route exact path='/' component={Home} /> 
-              <Route exact path='/add' component={Restaurant_form} />
-              <Route exact path='/review' component={Review_form} />   
-            </Switch> 
-    </>
-      
-  )
+    <Switch>
+     <Route exact path='/' component={Home} /> 
+      <Route exact path='/RestForm' component={Restaurant_form} />
+      <Route exact path='/review' component={Review_form} />   
+    </Switch> 
+</>
+  );
+
+    
+  
 }
 export default App;
