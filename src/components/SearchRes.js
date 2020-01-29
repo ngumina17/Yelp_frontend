@@ -2,6 +2,7 @@ import React from 'react'
 import Results from './Search/Results'
 
 
+
 function SearchRes (props) {
 
 if (props.keywords == '' && props.location == ''){
@@ -31,6 +32,7 @@ else(
     searchParam = props.location
 )
     console.log(searchParam)
+
     fetch(`https://project3-restaurant-finder.herokuapp.com/restaurants/${searchParam}/`)
         .then(response => response.json())
         .then(data => {
@@ -46,9 +48,9 @@ else(
 return(
     <div>
         <Results
-data={props.data}
-            newId={props.newId}
-/>
+            data={props.data}
+            newId={props.newId}/>
+
     </div>
 )}
 

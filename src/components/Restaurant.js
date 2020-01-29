@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Star from './Single_Restaurant/Star'
 import Catagories from './Single_Restaurant/Categories'
 import Reviews from './Single_Restaurant/Reviews'
@@ -18,7 +18,7 @@ function Restaurant(props) {
 
     return (
         <main>
-            <Link to={`/Search/${props.keywords}`}> <button>Back</button></Link>
+            <Link to={`/search/${props.keywords}`}> <button>Back</button></Link>
             <img src={props.data.images} alt={props.data.name} />
             <h1>{props.data.name}</h1>
             <div>
@@ -27,17 +27,18 @@ function Restaurant(props) {
                 <h3>{props.data.state}</h3>
                 <h3>Zipcode</h3>
             </div>
-            <Link to="/Review"><button>Add Review</button></Link>
+            <Link to="/review"><button>Add Review</button></Link>
             <Star />
             <h5>Review Count</h5>
             <Catagories
                 data={props.data.categories}
 />
             <Reviews 
-reviews={props.data.reviews}
+                reviews={props.data.reviews}
 />
         </main>
     )}
+
 
 
 
