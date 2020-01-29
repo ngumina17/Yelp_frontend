@@ -69,6 +69,8 @@ newData={newData}
       </main>
     </div>
   );
+
 }
 
+}
 export default App;

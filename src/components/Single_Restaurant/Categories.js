@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 function Categories(props) {
     //need to map through catagories
     let list = []
@@ -18,6 +19,7 @@ return(
             {list}
         </div>
     )
+
 }
 
 export default Categories

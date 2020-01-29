@@ -2,6 +2,7 @@ import React from 'react'
 import Results from './Search/Results'
 
 
+
 function SearchRes (props) {
 
 if (props.keywords == '' && props.location == ''){
@@ -49,6 +50,7 @@ return(
 data={props.data}
             newId={props.newId}
 />
+
     </div>
 )}
 

@@ -4,6 +4,7 @@ import SingleResult from './SingleResult'
 
 function Results(props) {
 
+
 //map through list to reprint all info needed
     if (props.data.length == 0){
 return(
@@ -30,6 +31,7 @@ return (
   </div>
 )
 }
+
 }
 
 export default Results

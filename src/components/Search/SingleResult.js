@@ -1,9 +1,12 @@
 import React from 'react'
+
 import { Link } from 'react-router-dom'
+
 
 
 function SingleResult(props) {
     //map through list to reprint all info needed
+
     return (
         <>
             <div id={props.restaurant._id}>
@@ -24,6 +27,7 @@ function SingleResult(props) {
                 <h3>{props.restaurant.state}</h3>
                 <h3>{props.restaurant.postal_code}</h3>
             </div>
+
         </>
     )
 }
