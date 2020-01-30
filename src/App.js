@@ -10,12 +10,12 @@ import SearchResults from "./components/SearchResults"
 function App (){
   return (
     <>
-    <Switch>
-     <Route exact path='/' component={Home} /> 
-      <Route exact path='/RestForm' component={Restaurant_form} />
-      <Route exact path='/review' component={Review_form} /> 
-      <Route exact path="/results" render={props => <SearchResults results={props.results}/>}  />  
-    </Switch> 
+      <Switch>
+          <Route exact path='/' component={Home} /> 
+          <Route exact path='/results' component={Home} /> 
+          <Route exact path='/RestForm' component={Restaurant_form} />
+         <Route exact path='/review' component={Review_form} /> 
+      </Switch> 
 </>
   );
 

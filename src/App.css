@@ -211,4 +211,78 @@ a:visited {
   color:white;
 }
 
+
+.restaurants-container {
+  font-size: 14px;
+	font-family: sans-serif;
+	font-stretch: extra-condensed;
+	padding: 12px;
+}
+
+.restaurants__name {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.restaurants__name-link {
+  font-family: sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #0073bb;	
+	text-decoration: none;
+}
+
+.restaurants__name-link:hover {
+  
+}
+
+.restaurants__rating {
+  margin-bottom: 7px;
+  padding: 11px 0 0 0;
+}
+
+.restaurants__rating__star.four-stars {
+  display: inline-block;
+	width: 102px;
+	height: 18px;
+	background-image: url(https://s1.postimg.org/8z2l2o6o8f/stars_sprite.png);
+	background-position: 0 194px;
+	margin: 0;
+	padding: 0;
+	color: transparent;
+	user-select: none;
+  vertical-align: bottom;
+}
+
+.restaurants__rating__star.five-stars {
+  display: inline-block;
+	width: 102px;
+	height: 18px;
+	background-image: url(https://s1.postimg.org/8z2l2o6o8f/stars_sprite.png);
+	background-position: 0 158px;
+	margin: 0;
+	padding: 0;
+	color: transparent;
+	user-select: none;
+}
+
+.restaurants__rating .review-counter {
+	display: inline-block;
+	padding: 0;
+	color: #666;
+	user-select: none;
+  vertical-align: text-top;
+}
+
+.restaurants-info {
+  color: #333;
+	margin-bottom: 7px;
+}
+
+.restaurants-info__cost {
+  font-size: 14px;
+	padding-right: 10px;
+}
+
+
 /* CSS is based off of this codepen --> https://codepen.io/dcgleason/pen/GRgaqGY */

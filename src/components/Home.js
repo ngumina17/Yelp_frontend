@@ -35,36 +35,50 @@ class Home extends React.Component {
 
   render() {
     return (
-      <>
-        <header className="main-header">
-          <div className="main-header__wrapper">
-            <div className="nav-wrapper">
-              <nav className="main-nav">
-                <ul className="main-list">
-                  <li class="main-list__item">
-                    <a>
-                      <Link to="/review" className="main-list__link">
-                        Write a Review
-                      </Link>
-                    </a>
-                  </li>
-                  <li class="main-list__item">
-                    <a>
-                      <Link to="/RestForm" className="main-list__link">
-                        Add a Restaurant
-                      </Link>
-                    </a>
-                  </li>
-                </ul>
-              </nav>
-              <div className="search-container">
-                <div className="search">
-                  <SearchBar onChange={this.handleChange} results={this.state.data} />
+        <>
+        <Switch>
+          <Route
+            exact
+            path="/"
+            render={props => (
+              <header className="main-header">
+                <div className="main-header__wrapper">
+                  <div className="nav-wrapper">
+                    <nav className="main-nav">
+                      <ul className="main-list">
+                        <li class="main-list__item">
+                          <Link to="/review" className="main-list__link">
+                            Write a Review
+                          </Link>
+                        </li>
+                        <li class="main-list__item">
+                          <Link to="/RestForm" className="main-list__link">
+                            Add a Restaurant
+                          </Link>
+                        </li>
+                      </ul>
+                    </nav>
+                    <div className="search-container">
+                      <div className="search">
+                        <SearchBar
+                          onChange={this.handleChange}
+                          results={this.state.data}
+                        />
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </header>
+              </header>
+            )}
+          />
+          <Route
+            exact
+            path="/results/"
+            render={props => (
+              <SearchResults results={this.state.data} {...props} />
+            )}
+          />
+        </Switch>
         <footer class="main-footer">
           <small class="copyright">
             <div class="copyright__img">
@@ -74,14 +88,11 @@ class Home extends React.Component {
               />
             </div>
             <div class="copyright__text">
-              Copyright © 2020 Yelp 2.0 Inc. Yelp 2.0 and related marks are
-              not registered trademarks of Yelp.
+              Copyright © 2020 Yelp 2.0 Inc. Yelp 2.0 and related marks are not
+              registered trademarks of Yelp.
             </div>
           </small>
         </footer>
-        <Switch>
-            <Route exact path="/results" render={props => <SearchResults results={this.state.data}{...props} />}  />  
-        </Switch> 
       </>
     );
   }

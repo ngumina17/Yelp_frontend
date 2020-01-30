@@ -14,9 +14,8 @@ console.log("search bar", props.results.restaurants)
             <>
             <nav id='home'>
                 <input id='key' type="text" onChange={props.onChange} className="field request" placeholder="Search Keywords..." name="keyword" />
-                <input type="text" onChange={props.onChange} className="field location" placeholder="Search Location..." name="location" />
+                <input type="text" onChange={props.onChange} className="field location" placeholder="Search City..." name="location" />
                 <Link to="/results" className ="search-button" >Search</Link>
-                <Route exact path="/results" render={props => <SearchResults results={restaurants}{...props} />}  />  
             </nav>
             </>
         )
