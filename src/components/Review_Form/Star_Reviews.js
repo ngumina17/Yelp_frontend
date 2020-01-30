@@ -1,5 +1,5 @@
 import React from 'react';
-
+import '../Form.css';
 
 
 function Star_Review (props) {
@@ -13,7 +13,6 @@ console.log('star')
 
 return(
 <div>
-    <h1>Star Review</h1>
         <div className='rating'>
             <input type='radio' name='star' id='star1' /><label htmlFor='star1'></label>
             <input type='radio' name='star' id='star2' /><label htmlFor='star2'></label>

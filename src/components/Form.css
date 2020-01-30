@@ -1,0 +1,25 @@
+form{
+text-align: center;
+margin: 5% 10% ;
+}
+form div{
+padding: 1%;
+}
+form div Input{
+margin: 1%;
+}
+form h2{
+display: inline;
+}
+
+form#Review h2{
+margin: 1%;
+}
+
+#field{
+margin: 5%;
+}
+form#Review h2{
+margin: 2%;
+}
+

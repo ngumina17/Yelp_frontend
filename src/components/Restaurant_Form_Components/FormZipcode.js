@@ -1,5 +1,6 @@
 import React from 'react'
-
+import { Input  } from 'reactstrap';
+import '../Form.css';
 
 
 function FormZipcode (props){
@@ -11,8 +12,8 @@ function FormZipcode (props){
 
 return (
     <div>
-        <h2>Zipcode</h2>
-        <input type="text" placeholder="Zipcode" onChange={handleChange}  name="search" />
+        <h2 addonType="prepend">Zipcode</h2>
+        <Input  type="text" placeholder="Zipcode" onChange={handleChange}  name="search" />
     </div>
 )}
 

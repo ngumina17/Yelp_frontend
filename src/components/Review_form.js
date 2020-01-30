@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-
 import Star_Review from './Review_Form/Star_Reviews'
 import Review_Field from './Review_Form/Review_Field'
-
+import { Button } from 'reactstrap';
+import './Form.css';
 
 function Review_Form () {
 
@@ -21,7 +21,8 @@ function Review_Form () {
     }
 console.log(rating)
 return(
-    <nav>
+    <form id='Review'>
+        <h1>New Review</h1>
         <Star_Review  
             newRating={newRating}
 />
@@ -29,9 +30,9 @@ return(
             newText={newText}
 />
 
-        <button type="submit">Submit</button>
+        <Button color="danger" type="submit">Submit</Button>
 
-    </nav>
+    </form>
 )}
 
 export default Review_Form
