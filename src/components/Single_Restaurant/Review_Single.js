@@ -3,7 +3,7 @@ import Star from './Star'
 import { Link } from "react-router-dom";
 
 
-function Review_Single() {
+function Review_Single(props) {
     //information is sent this is sent back to  Review_Single
     return (
         <div>

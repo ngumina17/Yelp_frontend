@@ -14,7 +14,6 @@ function stars(e){
 
 return(
 <div className='stars'>
-
         <div className='rating'>
             <input type='radio' name='star' id='star1' /><label className='after' onClick={stars} id='1' htmlFor='star1'></label>
             <input type='radio' name='star' id='star2' /><label className={`${2 <= props.rating ? 'after' : 'before'}`} onClick={stars} id='2' htmlFor='star2'></label>
