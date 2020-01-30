@@ -9,6 +9,7 @@ import Home from "./components/Home"
 function App (){
   return (
     <>
+<h1></h1>
     <Switch>
      <Route exact path='/' component={Home} /> 
       <Route exact path='/RestForm' component={Restaurant_form} />

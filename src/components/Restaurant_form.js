@@ -6,6 +6,7 @@ import FormStreet from "./Restaurant_Form_Components/FormStreet";
 import FormZipcode from "./Restaurant_Form_Components/FormZipcode";
 import FormCity from "./Restaurant_Form_Components/FormCity";
 import FormSubmit from "./Restaurant_Form_Components/FormSubmit";
+import './Form.css';
 import { Link } from "react-router-dom";
 
 function Restaurant_form(props) {
@@ -60,7 +61,8 @@ function Restaurant_form(props) {
   }
 
   return (
-    <form>
+    <form id='restraunt'>
+<h1>Add a Restaurant</h1>
       <FormImg newImage={newImage} />
       <FormName newName={newName} />
 

@@ -1,4 +1,6 @@
 import React from "react";
+import { Input } from 'reactstrap';
+import '../Form.css';
 
 function FormImg(props) {
   let newImage = props.newImage;
@@ -11,7 +13,7 @@ function FormImg(props) {
   return (
     <div>
       <h2>Image Url</h2>
-      <input
+      <Input
         type="text"
         placeholder="Image URL"
         onChange={handleChange}
