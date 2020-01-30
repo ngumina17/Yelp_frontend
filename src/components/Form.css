@@ -40,8 +40,6 @@ font-family: fontAwesome;
 position: relative;
 display: block;
 font-size: 50px;
-color: #9c1818;
-/* opacity: 0; */
 }
 
 .stars label.after:before{
@@ -50,13 +48,6 @@ font-family: fontAwesome;
 position: relative;
 display: block;
 font-size: 50px;
-color: #ffff00;
-
-}
-
-.stars label:hover:after,
-.stars label:checked ~ label:after
-{
-opacity: 1;
+color: yellow;
 
 }

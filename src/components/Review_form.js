@@ -7,7 +7,7 @@ import './Form.css';
 function Review_Form () {
 
     const [rating, setRating] = useState({
-        rating: 0
+        rating: 1
     })
     const [text, setText] = useState({
         text: ''
@@ -25,6 +25,7 @@ return(
         <h1>New Review</h1>
         <Star_Review  
             newRating={newRating}
+rating={rating.rating}
 />
         <Review_Field 
             newText={newText}
