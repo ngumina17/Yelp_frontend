@@ -23,3 +23,40 @@ form#Review h2{
 margin: 2%;
 }
 
+
+.stars input {
+display: none;
+}
+
+.stars label {
+cursor: pointer;
+width: 50px;
+height: 50px;
+}
+
+.stars label.before:before{
+content: '\f005';
+font-family: fontAwesome;
+position: relative;
+display: block;
+font-size: 50px;
+color: #9c1818;
+/* opacity: 0; */
+}
+
+.stars label.after:before{
+content: '\f005';
+font-family: fontAwesome;
+position: relative;
+display: block;
+font-size: 50px;
+color: #ffff00;
+
+}
+
+.stars label:hover:after,
+.stars label:checked ~ label:after
+{
+opacity: 1;
+
+}

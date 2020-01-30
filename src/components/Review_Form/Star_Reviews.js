@@ -12,13 +12,14 @@ console.log('star')
 }
 
 return(
-<div>
+<div className='stars'>
+
         <div className='rating'>
-            <input type='radio' name='star' id='star1' /><label htmlFor='star1'></label>
-            <input type='radio' name='star' id='star2' /><label htmlFor='star2'></label>
-            <input type='radio' name='star' id='star3' /><label htmlFor='star3'></label>
-            <input type='radio' name='star' id='star4' /><label htmlFor='star4'></label>
-            <input type='radio' name='star' id='star5' /><label htmlFor='star5'></label>
+            <input type='radio' name='star' id='star1' /><label className='after' onClick={stars} id='1' htmlFor='star1'></label>
+            <input type='radio' name='star' id='star2' /><label className='before' onClick={stars} id='2' htmlFor='star2'></label>
+            <input type='radio' name='star' id='star3' /><label className='before' onClick={stars} id='3' htmlFor='star3'></label>
+            <input type='radio' name='star' id='star4' /><label className='before' onClick={stars} id='4' htmlFor='star4'></label>
+            <input type='radio' name='star' id='star5' /><label className='before' onClick={stars} id='5' htmlFor='star5'></label>
 </div>
 </div>
 )}
