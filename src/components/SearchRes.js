@@ -23,7 +23,7 @@ console.log('both fields filled')
 
 
 
-else {
+else if (props.keywords !== '' || props.location !== ''){
 let searchParam = ''
 if (props.keywords !== ''){
     searchParam = props.keywords
@@ -31,8 +31,9 @@ if (props.keywords !== ''){
 else(
     searchParam = props.location
 )
+    console.log(searchParam)
 
-    fetch(`https://project3-restaurant-finder.herokuapp.com/restaurants/${props.keywords}/`)
+    fetch(`https://project3-restaurant-finder.herokuapp.com/restaurants/${searchParam}/`)
         .then(response => response.json())
         .then(data => {
             props.newData(data)

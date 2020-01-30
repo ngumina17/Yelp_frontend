@@ -6,7 +6,6 @@ import FormStreet from './Restaurant_Form_Components/FormStreet'
 import FormZipcode from './Restaurant_Form_Components/FormZipcode'
 import FormCity from './Restaurant_Form_Components/FormCity'
 import FormSubmit from './Restaurant_Form_Components/FormSubmit'
-import { Link } from 'react-router-dom'
 
 
 
@@ -74,9 +73,9 @@ function Restaurant_form(props) {
                 newCity={newCity}
             />
 
-<FormCity
-newCity={newCity}
-/>
+            <FormCity
+            newCity={newCity}
+            />
 
             <FormState
                 newState={newState}
