@@ -7,7 +7,9 @@ function Review_Single() {
     //information is sent this is sent back to  Review_Single
     return (
         <div>
-            <Star />
+            <Star
+                rating={3}
+            />
             <p>Review text</p>
             <Link href="/"><button>Delete</button></Link>
         </div>
