@@ -63,11 +63,7 @@ function Restaurant_form(props) {
     <form>
       <FormImg newImage={newImage} />
       <FormName newName={newName} />
-
       <FormCity newCity={newCity} />
-
-      <FormCity newCity={newCity} />
-
       <FormState newState={newState} />
       <FormStreet newAddress={newAddress} />
       <FormZipcode newZip={newZip} />
