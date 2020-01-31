@@ -8,7 +8,8 @@ class Home extends React.Component {
   constructor() {
     super();
     this.state={
-        data: []
+        data: [],
+        database: []
     }
   }
 
@@ -23,17 +24,31 @@ class Home extends React.Component {
     }
   };
 
+
+
   search = query => {
+    const heroAPI = `https://project3-restaurant-finder.herokuapp.com/restaurants/city/${query}`
     const url = `https://opentable.herokuapp.com/api/restaurants?city=${query}`;
-    fetch(url)
+    fetch(heroAPI)
       .then(results => results.json())
       .then(res => {
-        this.setState({ data: res });
+        this.setState({ database: res });
         // console.log(this.state.data.restaurants)
       });
+      if (this.state.database !== null){
+        fetch(url)
+        .then(results => results.json())
+        .then(res => {
+          this.setState({ data: res });
+          // console.log(this.state.data.restaurants)
+        });
+      }
   };
 
   render() {
+
+    console.log("database", this.state.database)
+    console.log("api", this.state.data)
     return (
         <>
         <Switch>
@@ -73,9 +88,9 @@ class Home extends React.Component {
           />
           <Route
             exact
-            path="/results"
+            path="/results/"
             render={props => (
-              <SearchResults results={this.state.data} {...props} />
+              <SearchResults data={this.state.data} database={this.state.database}  {...props} />
             )}
           />
         </Switch>

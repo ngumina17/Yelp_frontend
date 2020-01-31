@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-
+import { Input } from 'reactstrap';
+import '../Form.css';
 
 
 function Review_Field(props) {
@@ -11,7 +12,7 @@ function Review_Field(props) {
     }
 
 return(
-    <input onChange={handleChange} type="text" />
+    <Input id='field' onChange={handleChange} type="textarea"  />
 )
 }
 export default Review_Field

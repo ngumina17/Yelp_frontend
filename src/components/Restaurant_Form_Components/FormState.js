@@ -1,5 +1,6 @@
 import React from 'react'
-
+import { Input } from 'reactstrap';
+import '../Form.css';
 
 
 function FormState(props) {
@@ -12,7 +13,7 @@ function FormState(props) {
 return(
     <div>
         <h2>State</h2>
-        <input type="text" onChange={handleChange} placeholder="State" name="search" />
+        <Input type="text" onChange={handleChange} placeholder="State" name="search" />
     </div>
 )
 }
