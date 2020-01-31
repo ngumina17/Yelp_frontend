@@ -47,9 +47,6 @@ class Home extends React.Component {
                     <nav className="main-nav">
                       <ul className="main-list">
                         <li class="main-list__item">
-                          <Link to="/review" className="main-list__link">
-                            Write a Review
-                          </Link>
                         </li>
                         <li class="main-list__item">
                           <Link to="/RestForm" className="main-list__link">
