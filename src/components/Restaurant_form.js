@@ -70,10 +70,6 @@ function Restaurant_form(props) {
                 newCity={newCity}
             />
 
-            <FormCity
-                newCity={newCity}
-            />
-
             <FormState
                 newState={newState}
             />

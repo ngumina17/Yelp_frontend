@@ -8,7 +8,7 @@
 - ### User Stories
   - Search by location
   - Search by keywords
-  - View more information about restraunts
+  - View more information about restaurants
   - Add a review
 - ### Technologies used
   - React
