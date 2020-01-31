@@ -22,6 +22,7 @@ class App extends React.Component{
   }
 
   search=(query)=>{
+    const heroURL = `https://project3-restaurant-finder.herokuapp.com/restaurants/city/${query}`
     const url = `https://opentable.herokuapp.com/api/restaurants?city=${query}`;
     fetch(url)
       .then(results => results.json())
