@@ -11,7 +11,7 @@ function Categories(props) {
 
         return (
             <div className='catagories'>
-                <h2>Catagories</h2>
+                <h2>Categories</h2>
                 {cats}
             </div>
         )
