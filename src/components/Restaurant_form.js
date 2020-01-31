@@ -1,15 +1,13 @@
-import React, { useState } from 'react';
-import FormImg from './Restaurant_Form_Components/FormImg'
-import FormName from './Restaurant_Form_Components/FormName'
-import Star_Review from './Review_Form/Star_Reviews'
-import Review_Field from './Review_Form/Review_Field'
-import FormState from './Restaurant_Form_Components/FormState'
-import FormStreet from './Restaurant_Form_Components/FormStreet'
-import FormZipcode from './Restaurant_Form_Components/FormZipcode'
-import FormSubmit from './Restaurant_Form_Components/FormSubmit'
-import FormCity from "./Restaurant_Form_Components/FormCity"
-
-
+import React, { useState, useEffect } from "react";
+import FormImg from "./Restaurant_Form_Components/FormImg";
+import FormName from "./Restaurant_Form_Components/FormName";
+import FormState from "./Restaurant_Form_Components/FormState";
+import FormStreet from "./Restaurant_Form_Components/FormStreet";
+import FormZipcode from "./Restaurant_Form_Components/FormZipcode";
+import FormCity from "./Restaurant_Form_Components/FormCity";
+import FormSubmit from "./Restaurant_Form_Components/FormSubmit";
+import './Form.css';
+import { Link } from "react-router-dom";
 
 function Restaurant_form(props) {
     const [name, setName] = useState({
@@ -62,32 +60,15 @@ function Restaurant_form(props) {
         setAddress({ address: address })
     }
 
-    return (
-        <form>
-            <FormImg
-                newImage={newImage}
-            />
-            <FormName
-                newName={newName}
-            />
-                <FormCity
-            newCity={newCity}
-                />
-            <FormState
-                newState={newState}
-            />
-            <FormStreet
-                newAddress={newAddress}
-            />
-            <FormZipcode
-                newZip={newZip}
-            />
-            <Star_Review
-                newRating={newRating}
-            />
-            <Review_Field
-                newText={newText}
-            />
+  return (
+    <form>
+      <FormImg newImage={newImage} />
+      <FormName newName={newName} />
+      <FormCity newCity={newCity} />
+      <FormState newState={newState} />
+      <FormStreet newAddress={newAddress} />
+      <FormZipcode newZip={newZip} />
+
             <FormSubmit
                 name={name.name}
                 address={address.address}

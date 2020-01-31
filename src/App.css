@@ -1,5 +1,5 @@
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .main-page {
@@ -8,8 +8,6 @@
   line-height: 0;
   box-sizing: border-box;
 }
-
-/********* main-header *****/
 
 .main-header {
   height: 550px;
@@ -27,7 +25,7 @@
 }
 
 .main-nav {
-  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
   font-size: 0.9em;
   line-height: 0;
 }
@@ -81,7 +79,7 @@
 }
 
 .show-more a:before {
-  content: '';
+  content: "";
   display: inline-block;
   width: 14px;
   height: 9px;
@@ -156,7 +154,7 @@
 }
 
 .main-footer__col.region option {
-  color: ##0073bb;
+  color: #0073bb;
 }
 
 .main-footer__heading {
@@ -194,108 +192,13 @@
   padding: 0;
 }
 
-.region-title {
-  font-size: 16px;
-  color: #d32323;
-  margin-bottom: 18px;
-}
-
-.languages-list {
-  display: block;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  line-height: 1.1;
-  margin-bottom: 30px;
-}
-
-.languages-list__item {
-  margin: 0;
-  padding: 0;
-  font-size: 14px;
-  color: #0073bb;
-  user-select: none;
-}
-
-.languages-sublist {
-  position: absolute;
-  display: block;
-  font-size: 14px;
-  line-height: 1.1em;
-  margin: 0;
-  padding: 0;
-}
-
-.languages-sublist__item {
-  display: none;
-  width: 204px;
-  box-sizing: border-box;
-  background-color: #fff;
-  padding: 14px;
-  cursor: pointer;
- }
-
-.languages-list__item.title:hover 
-.languages-sublist .languages-sublist__item {
-  display: block;
-}
-
-.languages-sublist__item:hover {
-  background-color: #0073bb;
-  color: #fff;
-}
-
-.countries-list {
-  display: block;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  line-height: 1.1;
-}
-
-.countries-list__item {
-  margin: 0;
-  padding: 0;
-  font-size: 14px;
-  color: #0073bb;
-  user-select: none;
-}
-
-.countries-sublist {
-  position: absolute;
-  display: block;
-  font-size: 14px;
-  line-height: 1.1em;
-  margin: 0;
-  padding: 0;
-}
-
-.countries-sublist__item {
-  display: none;
-  width: 204px;
-  box-sizing: border-box;
-  background-color: #fff;
-  padding: 14px;
-  cursor: pointer;
- }
-
-.countries-list__item.title:hover 
-.countries-sublist .countries-sublist__item {
-  display: block;
-}
-
-.countries-sublist__item:hover {
-  background-color: #0073bb;
-  color: #fff;
-}
-
 .copyright {
   display: block;
   width: 960px;
   margin: 0 auto;
 }
 
-.copyright__img-block {
+.copyright__img {
   width: 648px;
   margin: 0 auto;
   margin-bottom: 10px;
@@ -331,8 +234,8 @@
   border-radius: 0;
 }
 
-.search{
-  display:flex;
+.search {
+  display: flex;
   justify-content: center;
   position: absolute;
   top: 80%;
@@ -343,7 +246,7 @@
   width: 63px;
   height: 23px;
   box-sizing: border-box;
-  background-color: #D32323;
+  background-color: #d32323;
   background-image: url(https://s26.postimg.org/v8mlp8w49/search.png);
   background-repeat: no-repeat;
   background-position: 17px 8px;
@@ -351,14 +254,108 @@
   font-size: 0;
   vertical-align: top;
   border-radius: 0 4px 4px 0;
-  
 }
 
-
-#home{
+#home {
   display: inline-block;
 }
 
 a:visited {
-  color:white;
+  color: white;
 }
+
+@media only screen and (max-width: 1025px) {
+  .main-header {
+    width: 1025px;
+  }
+
+  .main-header__wrapper {
+    width: 100%;
+  }
+  .main-footer {
+    width: 1025px;
+    align-content: center;
+  }
+  .copyright {
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  .main-header {
+    width: 100%;
+    height: 100%;
+  }
+
+  .main-header__wrapper {
+    position: relative;
+    width: 100%;
+    min-height: 300px;
+    margin: 0 auto;
+  }
+  .main-footer {
+    width: 415px;
+    height: 100%;
+  }
+  .copyright_img {
+    width: 200px;
+
+    margin-bottom: 10px;
+  }
+  .field.request {
+    width: 40%;
+    font-size: 13px;
+  }
+  
+  .field.location {
+    width: 40%;
+    font-size: 13px;
+  }
+  .search-button {
+    width: 20%;
+    height: 18px;
+  }
+  .search {
+    flex-grow: 1;
+    width: 300px;
+    font-size: 0;
+    margin-bottom: 10px;
+  }
+  .search-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    position: absolute;
+    top: 80%;
+    width: 90%;
+    font-size: 0;
+    line-height: normal;
+    margin-bottom: 10px;
+  }
+  .copyright_text {
+    width: 300px;
+  }
+
+  .copyright {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 361px) {
+  .main-header {
+    height: 400px;
+    width: 400px;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .main-header__wrapper {
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+    margin: 0 auto;
+  }
+}
+
+/* CSS is based off of this codepen --> https://codepen.io/dcgleason/pen/GRgaqGY */
