@@ -60,29 +60,14 @@ function Restaurant_form(props) {
         setAddress({ address: address })
     }
 
-    return (
-        <form id='restraunt'>
-            <h1>Add a Restaurant</h1>
-            <FormImg newImage={newImage} />
-            <FormName newName={newName} />
-
-            <FormCity
-                newCity={newCity}
-            />
-
-            <FormCity
-                newCity={newCity}
-            />
-
-            <FormState
-                newState={newState}
-            />
-            <FormStreet
-                newAddress={newAddress}
-            />
-            <FormZipcode
-                newZip={newZip}
-            />
+  return (
+    <form>
+      <FormImg newImage={newImage} />
+      <FormName newName={newName} />
+      <FormCity newCity={newCity} />
+      <FormState newState={newState} />
+      <FormStreet newAddress={newAddress} />
+      <FormZipcode newZip={newZip} />
 
             <FormSubmit
                 name={name.name}

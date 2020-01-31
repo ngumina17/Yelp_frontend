@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom'
 
 function SearchButton(props){
 return(
-<div id='search'>
-    <Link href="/Search"><button onClick={props.onChange} type="search" >Search</button></Link>
+<div className='searchDiv'>
+    <Link href="/Search"><button onClick={props.onChange} type="search" className='searchButton' >Search</button></Link>
    
         {/* <style jsx>{`
         div,
