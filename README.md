@@ -1,5 +1,4 @@
-# [Yelp 2.0]
--[Deployed Site](https://yelprestaurants.netlify.com)
+# [Yelp Restraunts](yelprestaurants.netlify.com )
 
 - ### Description
   - We built this application to help people find and review restraunts near them.
@@ -24,7 +23,6 @@
 - ### Contribution Guidelines
 
 - ## Time Frames
-
 | Component                                     | Priority | Estimated Time | Time Invested | Actual Time |
 | --------------------------------------------- | :------: | :------------: | :-----------: | :---------: |
 | CSS Styling (responsive)/ Next.js             |    H     |     7 hrs      |     6 hrs     |    7hrs    |
