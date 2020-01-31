@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom'
 import "../App.css";
 
 
@@ -11,7 +12,7 @@ function SearchResults (props){
             <div className="image-wrapper">
                 <img src={props.database['images']} width="298px" height="180px"  />
             </div>
-            <h1 className="restaurant__name">{props.database["name"]}</h1>
+                    <Link to={`/Restaurant/${props.database._id}`}><h1 className="restaurant__name">{props.database["name"]}</h1></Link>
             <h6>{props.database["address"]}</h6>
             <h6>{props.database["city"]}, {props.database["state"]}</h6>
             <div className="price-wrapper">
@@ -31,7 +32,7 @@ function SearchResults (props){
             <div className="image-wrapper">
                 <img src={item.image_url} width="298px" height="180px"  />
             </div>
-            <h1 className="restaurant__name">{item.name}</h1>
+                    <Link to={`/Restaurant/${props.database._id}`}><h1 className="restaurant__name">{item.name}</h1></Link>
             <h6>{item.address}</h6>
             <h6>{item.city}, {item.state}</h6>
             <div className="price-wrapper">

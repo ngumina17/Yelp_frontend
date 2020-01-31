@@ -6,7 +6,7 @@ function SingleResult(props) {
         <>
             <div id={props.restaurant._id}>
                 <img src={props.restaurant.images} alt={props.restaurant.name} />
-                <Link to="/Restaurant">
+                <Link to={`/Restaurant/${props.restaurant._id}`}>
                     <h3 id={props.restaurant._id}
                         onClick={(e) => {
                             let id = (e.target.id)
