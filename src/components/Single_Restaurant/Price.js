@@ -3,9 +3,9 @@ import './restraunt.css';
 
 function Price(props) {
 
-    //need to make price visual through price
+    //need to make price visual with dollarsigns
     return (
-        <div className='prices'>
+        <div align='right' className='prices'>
 
             <div className='rating'>
                 <input type='radio' name='price' id='price1' /><label className={`${2 <= props.price ? 'after' : 'before'}`} id='1' htmlFor='price1'></label>
