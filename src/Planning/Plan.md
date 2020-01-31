@@ -47,13 +47,36 @@
 ## Individual Parts
 
 # Nicole
-- 
+- Frontend add review
+- Frontend add restraunt
+- Frontend delete review
+- Deployed frontend
+- Backend create Models 
+- Backend test Models
+- Backend Routes
+- readMe
 # Jen
-- 
+- Frontend add review
+- Frontend add restraunt
+- Frontend delete review
+- Deployed Backend
+- Backend create Models 
+- Backend test Models
+- Backend Routes
 # Danny
-- 
+- Frontend search Function
+- Fontend Routes and Links
+- Search function
+- display search results
+- Css for search results
 # Kassidy
-- 
+- Frontend search Function
+- Fontend Routes and Links
+- Search function
+- display search results
+- display single restraunt
+- Css for Single restraunt
+- readMe
 
 
 ## Time Frames
