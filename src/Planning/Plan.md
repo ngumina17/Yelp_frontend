@@ -2,6 +2,11 @@
 
 ## User Stories
 
+- Search Locations to find Restraunts
+- Click on a link to see more information about that restraunt
+- Read reviews
+- Add and delete reviews
+  
 ## Wireframes
 
 [React Archeture](https://docs.google.com/drawings/d/1y44My8sYMl_bfwqnF1y1vTg7l16OhztRk_ygJ82LT8Q/edit?usp=sharing)
@@ -38,6 +43,40 @@
 ## Gold
 - Map
 - User DataBase
+
+## Individual Parts
+
+# Nicole
+- Frontend add review
+- Frontend add restraunt
+- Frontend delete review
+- Deployed frontend
+- Backend create Models 
+- Backend test Models
+- Backend Routes
+- readMe
+# Jen
+- Frontend add review
+- Frontend add restraunt
+- Frontend delete review
+- Deployed Backend
+- Backend create Models 
+- Backend test Models
+- Backend Routes
+# Danny
+- Frontend search Function
+- Fontend Routes and Links
+- Search function
+- display search results
+- Css for search results
+# Kassidy
+- Frontend search Function
+- Fontend Routes and Links
+- Search function
+- display search results
+- display single restraunt
+- Css for Single restraunt
+- readMe
 
 
 ## Time Frames

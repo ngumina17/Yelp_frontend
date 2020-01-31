@@ -1,17 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { Button } from 'reactstrap';
-import '../Form.css';
-
-const url = "https://project3-restaurant-finder.herokuapp.com/restaurants";
+import { Button } from "reactstrap";
+import "../Form.css";
+import { Route, Redirect } from "react-router-dom";
 
 function FormSubmit(props) {
-  //if zip is NaN do not send
+  const url = "https://project3-restaurant-finder.herokuapp.com/restaurants";
 
-  // function handleClick() {
-  // console.log(props)
-  // }
-  //     onClick = { this.handleClick }
+  const [redirect, setRedirect] = useState(false);
+  const [id, setId] = useState("");
 
   function post(newRestaurant) {
     console.log(newRestaurant);
@@ -34,14 +31,21 @@ function FormSubmit(props) {
       })
     })
       .then(res => res.json())
-      .then(res => console.log(res))
+      .then(res => {
+        setId(res._id);
+        setRedirect(true);
+      })
       .catch(err => console.log(err));
   }
+
+  function afterPost() {}
 
   function handleClick() {
     post(props);
   }
-
+  if (redirect) {
+    return <Redirect to={`/Restaurant/${id}`} />;
+  }
   return (
     <Link href="/">
       <Button color="danger" onClick={handleClick} type="submit">
