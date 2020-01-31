@@ -21,7 +21,6 @@ function Review_Form(props) {
   }
 
   function submitReview() {
-    console.log(rating);
     fetch(url, {
       method: "PUT",
       headers: {

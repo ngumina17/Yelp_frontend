@@ -7,6 +7,7 @@ display: none;
 .prices label {
 width: 50px;
 height: 50px;
+
 }
 
 .prices label.before:before{
@@ -50,6 +51,54 @@ margin-right: 18%;
 margin-left: 30%;
 }
 
+.stars input {
+display: none;
+}
+
+.stars label {
+width: 50px;
+height: 50px;
+}
+
+.stars label.before:before{
+content: '\f005';
+font-family: fontAwesome;
+position: relative;
+display: block;
+font-size: 50px;
+}
+
+.stars label.after:before{
+content: '\f005';
+font-family: fontAwesome;
+position: relative;
+display: block;
+font-size: 50px;
+color: yellow;
+}
+
+.api{
+margin: 1%;
+text-align: center;
+}
+
+.api h1{
+display: block;
+}
+
+.api img{
+margin-left: 15;
+margin-top: 10%;
+}
+
+.api .address{
+font-size: 1em;
+}
+
+
+.api Button {
+margin-left: 3%;
+}
 
 @media (min-width:425px) {
 
@@ -62,7 +111,7 @@ width: 300px;
 
 .api .prices{
 margin:0 7%;
-margin-top: -10%;
+margin-top: 10%;
 }
 
 .api h1{
@@ -77,4 +126,28 @@ margin-left: 5%;
 grid-column: 1;
 grid-row:  2;
 }
+}
+
+.api img{
+grid-column: 2;
+margin: 0 4%;
+height: 300px;
+width: 300px;
+}
+
+.api h1{
+margin: 5%;
+grid-row: 1;
+grid-column: 1;
+font-size: 50px;
+}
+
+.api .address{
+margin-left: 5%;
+grid-column: 1;
+grid-row:  2;
+}
+
+.api Button {
+margin: 5%;
 }
