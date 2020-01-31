@@ -7,11 +7,11 @@ function SearchResults (props){
     return (
         <React.Fragment>
             {props.database?
-        <div className="wrapper">
+            <div className="wrapper">
             <div className="image-wrapper">
                 <img src={props.database['images']} width="298px" height="180px"  />
             </div>
-            <h1>{props.database["name"]}</h1>
+            <h1 className="restaurant__name">{props.database["name"]}</h1>
             <h6>{props.database["address"]}</h6>
             <h6>{props.database["city"]}, {props.database["state"]}</h6>
             <div className="price-wrapper">
@@ -31,7 +31,7 @@ function SearchResults (props){
             <div className="image-wrapper">
                 <img src={item.image_url} width="298px" height="180px"  />
             </div>
-            <h1>{item.name}</h1>
+            <h1 className="restaurant__name">{item.name}</h1>
             <h6>{item.address}</h6>
             <h6>{item.city}, {item.state}</h6>
             <div className="price-wrapper">

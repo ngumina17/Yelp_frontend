@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 # [Yelp 2.0]
 -[Deployed Site](https://yelprestaurants.netlify.com)
+=======
+# [Yelp 2.0](url goes here)
+>>>>>>> search-functionality
 
 - ### Description
   - We built this application to help people find and review restraunts near them.
@@ -8,7 +12,11 @@
 - ### User Stories
   - Search by location
   - Search by keywords
+<<<<<<< HEAD
   - View more information about restaurants
+=======
+  - View more information about restraunts
+>>>>>>> search-functionality
   - Add a review
 - ### Technologies used
   - React
@@ -21,6 +29,7 @@
   - Clone your forked version down to your computer.
   - Run npm install in your folder
   - Run npm start and you should see our website
+<<<<<<< HEAD
 - ### Contribution Guidelines
 
 - ## Time Frames
@@ -64,3 +73,6 @@
 | Single Restaurant | Image, and additional details of each restaurant appear in the container. |
 | Review Form | When a user views a single restaurant, they have the ability to add a review and rating to that restaurant |
 | Restaurant Form | A user is able to add a new restaurant to the database. This includes the name, address, categories, and a 'star' rating. |
+=======
+- ### Contribution Guidelines
+>>>>>>> search-functionality
