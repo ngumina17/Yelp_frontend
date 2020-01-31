@@ -1,4 +1,6 @@
 import React from "react";
+import { Input } from 'reactstrap';
+import '../Form.css';
 
 function FormName(props) {
   let handleChange = (e) => {
@@ -9,7 +11,7 @@ function FormName(props) {
   return (
     <div>
       <h2>Form Name</h2>
-      <input
+      <Input
         type="text"
         placeholder="Form Name"
         onChange={handleChange}

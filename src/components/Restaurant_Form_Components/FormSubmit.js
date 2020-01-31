@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Button } from 'reactstrap';
+import '../Form.css';
 
 const url = "https://project3-restaurant-finder.herokuapp.com/restaurants";
 
@@ -42,9 +44,9 @@ function FormSubmit(props) {
 
   return (
     <Link href="/">
-      <button onClick={handleClick} type="submit">
+      <Button color="danger" onClick={handleClick} type="submit">
         Add Restaurant
-      </button>
+      </Button>
     </Link>
   );
 }

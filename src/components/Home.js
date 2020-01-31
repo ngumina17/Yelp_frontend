@@ -1,11 +1,15 @@
 import React from "react";
 import SearchBar from "./SearchBar";
 import "../App.css";
+import SearchResults from "./SearchResults";
 import { Route, Link, Switch } from "react-router-dom";
 
-class App extends React.Component {
+class Home extends React.Component {
   constructor() {
     super();
+    this.state={
+        data: []
+    }
   }
 
   handleChange = e => {
@@ -24,43 +28,57 @@ class App extends React.Component {
     fetch(url)
       .then(results => results.json())
       .then(res => {
-        console.log(res);
         this.setState({ data: res });
+        // console.log(this.state.data.restaurants)
       });
   };
 
   render() {
     return (
-      <>
-        <header className="main-header">
-          <div className="main-header__wrapper">
-            <div className="nav-wrapper">
-              <nav className="main-nav">
-                <ul className="main-list">
-                  <li class="main-list__item">
-                    <a>
-                      <Link to="/review" className="main-list__link">
-                        Write a Review
-                      </Link>
-                    </a>
-                  </li>
-                  <li class="main-list__item">
-                    <a>
-                      <Link to="/RestForm" className="main-list__link">
-                        Add a Restaurant
-                      </Link>
-                    </a>
-                  </li>
-                </ul>
-              </nav>
-              <div className="search-container">
-                <div className="search">
-                  <SearchBar onChange={this.handleChange} />
+        <>
+        <Switch>
+          <Route
+            exact
+            path="/"
+            render={props => (
+              <header className="main-header">
+                <div className="main-header__wrapper">
+                  <div className="nav-wrapper">
+                    <nav className="main-nav">
+                      <ul className="main-list">
+                        <li class="main-list__item">
+                          <Link to="/review" className="main-list__link">
+                            Write a Review
+                          </Link>
+                        </li>
+                        <li class="main-list__item">
+                          <Link to="/RestForm" className="main-list__link">
+                            Add a Restaurant
+                          </Link>
+                        </li>
+                      </ul>
+                    </nav>
+                    <div className="search-container">
+                      <div className="search">
+                        <SearchBar
+                          onChange={this.handleChange}
+                          results={this.state.data}
+                        />
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </header>
+              </header>
+            )}
+          />
+          <Route
+            exact
+            path="/results/"
+            render={props => (
+              <SearchResults results={this.state.data} {...props} />
+            )}
+          />
+        </Switch>
         <footer class="main-footer">
           <small class="copyright">
             <div class="copyright__img">
@@ -70,8 +88,8 @@ class App extends React.Component {
               />
             </div>
             <div class="copyright__text">
-              Copyright © 2004-2020 Yelp 2.0 Inc. Yelp 2.0 and related marks are
-              not registered trademarks of Yelp.
+              Copyright © 2020 Yelp 2.0 Inc. Yelp 2.0 and related marks are not
+              registered trademarks of Yelp.
             </div>
           </small>
         </footer>
@@ -79,4 +97,4 @@ class App extends React.Component {
     );
   }
 }
-export default App;
+export default Home;
