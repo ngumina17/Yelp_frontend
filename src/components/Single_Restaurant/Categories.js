@@ -5,7 +5,7 @@ function Categories(props) {
     if (props.data !== undefined) {
         let cats = props.data.map(i => {
             return (
-                <h3>{i}</h3>
+                <h3 key={i}>{i}</h3>
             )
         })
 

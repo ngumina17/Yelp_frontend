@@ -1,5 +1,5 @@
 import React from 'react'
-import '../Form.css';
+import './Database.css';
 
 function Star(props) {
     //need to make star visual through Star

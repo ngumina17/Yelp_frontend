@@ -1,13 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react';
 import Star from './Star'
 import { Link } from "react-router-dom";
+import { Button } from 'reactstrap';
 const url = 'https://project3-restaurant-finder.herokuapp.com/restaurants/5e2c7dee634ff9000422f6da'
 
 function Review_Single(props) {
     //information is sent this is sent back to  Review_Single
     let id = props.id
-    let rating = 0
-    let text = ''
+    const [data, setData] = useState({
+        data: []
+    })
     
 //fetch reviews from the database
     fetch(`https://project3-restaurant-finder.herokuapp.com/reviews/${id}/`)
@@ -19,10 +21,8 @@ function Review_Single(props) {
 
 //set the variables
 function settingVariables(data){
-text = data.text
-rating = data.rating
+setData({data})
 }
-
 
     function deleteReview(props) {
 
@@ -50,10 +50,10 @@ rating = data.rating
     return (
         <div>
             <Star
-                rating={rating}
+                rating={data.data.rating}
             />
-            <p>{text}</p>
-            <Link to="/"><button type="submit" onClick={deleteReview}>Delete</button></Link>
+<p>{data.data.text}</p>
+            <Link to="/"><Button className='delete' color="danger" type="submit" onClick={deleteReview}>Delete</Button></Link>
         </div>
     )
 }

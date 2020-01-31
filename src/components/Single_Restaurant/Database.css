@@ -1,33 +1,34 @@
-/* THis is the mobile for the api page*/
+/* THis is the mobile for the database pages*/
 
-.prices input {
+.stars input {
 display: none;
 }
 
-.prices label {
+.stars label {
 width: 50px;
 height: 50px;
 }
 
-.prices label.before:before{
-content: '\f155';
+.stars label.before:before{
+content: '\f005';
 font-family: fontAwesome;
 position: relative;
 display: block;
 font-size: 50px;
 }
 
-.prices label.after:before{
-content: '\f155';
+.stars label.after:before{
+content: '\f005';
 font-family: fontAwesome;
 position: relative;
 display: block;
 font-size: 50px;
-color: gold;
+color: yellow;
 }
 
 .api{
 margin: 1%;
+text-align: center;
 }
 
 .api h1{
@@ -35,19 +36,17 @@ display: block;
 }
 
 .api img{
-margin-top: 30%;
+margin-left: 15;
+margin-top: 10%;
 }
 
 .api .address{
 font-size: 1em;
 }
-.api .prices {
-margin-top: -32%;
-margin-right: 18%;
-}
+
 
 .api Button {
-margin-left: 30%;
+margin-left: 3%;
 }
 
 
@@ -58,11 +57,6 @@ grid-column: 2;
 margin: 0 4%;
 height: 300px;
 width: 300px;
-}
-
-.api .prices{
-margin:0 7%;
-margin-top: -10%;
 }
 
 .api h1{
@@ -76,5 +70,9 @@ font-size: 50px;
 margin-left: 5%;
 grid-column: 1;
 grid-row:  2;
+}
+
+.api Button {
+margin: 5%;
 }
 }
