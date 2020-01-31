@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react'
 import Restraunt_Star from './Single_Restaurant/Restraunt_Star'
 import Catagories from './Single_Restaurant/Categories'
 import Reviews from './Single_Restaurant/Reviews'
@@ -9,8 +9,9 @@ import './Single_Restaurant/restraunt.css';
 
 function Restaurant(props) {
 
-    let id = props.match.params.id
-    
+    // let id = props.match.params.id
+     let id = '5e2c7dee634ff9000422f6de'
+
     const [data, setData] = useState({
         data: []
     })
@@ -26,6 +27,7 @@ function Restaurant(props) {
         setData({ data: data })
     }
 
+    useEffect(() => {
     fetch(`https://opentable.herokuapp.com/api/restaurants/${id}`)
         .then(results => results.json())
         .then(data => {
@@ -33,7 +35,7 @@ function Restaurant(props) {
             setUseDataBase({ useDataBase: false })
             setStatus({ status: data.status })
         });
-
+    }, [])
     RunDataBase(id, data)
 
 

@@ -52,3 +52,12 @@ color: yellow;
 
 }
 
+
+@media (max-width:425px) {
+.stars label {
+cursor: pointer;
+width: 3em;
+height: 3em;
+}
+
+}
