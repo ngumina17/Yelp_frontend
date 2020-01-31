@@ -10,10 +10,10 @@ function FormName(props) {
 
   return (
     <div>
-      <h2>Form Name</h2>
+      <h2>Restaurant Name</h2>
       <Input
         type="text"
-        placeholder="Form Name"
+        placeholder="Restaurant Name"
         onChange={handleChange}
         name="search"
       />
