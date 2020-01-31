@@ -2,6 +2,11 @@
 
 ## User Stories
 
+- Search Locations to find Restraunts
+- Click on a link to see more information about that restraunt
+- Read reviews
+- Add and delete reviews
+  
 ## Wireframes
 
 [React Archeture](https://docs.google.com/drawings/d/1y44My8sYMl_bfwqnF1y1vTg7l16OhztRk_ygJ82LT8Q/edit?usp=sharing)
@@ -38,6 +43,17 @@
 ## Gold
 - Map
 - User DataBase
+
+## Individual Parts
+
+# Nicole
+- 
+# Jen
+- 
+# Danny
+- 
+# Kassidy
+- 
 
 
 ## Time Frames

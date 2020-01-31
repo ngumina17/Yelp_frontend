@@ -21,3 +21,5 @@
   - Run npm install in your folder
   - Run npm start and you should see our website
 - ### Contribution Guidelines
+
+- [Stars and Dollar Signs](https://www.youtube.com/watch?v=Ep78KjstQuw)
