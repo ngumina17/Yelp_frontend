@@ -40,9 +40,7 @@ function Restaurant(props) {
         .then(data => {
           setData(data);
         })
-        .catch(err => {
-          console.error({ err });
-        });
+        
     }
   }
   if (data !== undefined) {
